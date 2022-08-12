@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../JS/Alquiler.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="consulta mt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h3>
+                        Lista Alquileres
+                    </h3>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="table table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>CÓDIGO DE LIBRO</th>
+                                <th>NOMBRE DE LIBRO</th>
+                                <th>FECHA DE ALQUILER</th>
+                                <th>NOMBRE DEL CLIENTE</th>
+                                <th>DIRECCIÓN</th>
+                                <th>DÍAS A ALQUILAR</th>
+                                <th>PRECIO POR ALQUILER</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="DataAlquileres">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="Formulario">
+            <div class="row">
+                <div class="Col-12">
+                    <h3>
+                        Agregar Alquiler
+                    </h3>
+                </div>
+                <div class="col-12">
+                    <form class="InsertAlquiler">
+                        <label for="">CÓDIGO DE LIBRO</label>
+                        <input type="text" id="CODIGO_DE_LIBRO" class="form-control" placeholder="Ingrese código de libro">
+                        <label for="">NOMBRE LIBRO</label>
+                        <input type="text" id="NOMBRE_LIBRO" class="form-control" placeholder="Ingrese nombre de libro">
+                        <label for="">FECHA DE ALQUILER</label>
+                        <input type="text" id="FECHA_DE_ALQUILER" class="form-control" placeholder="Ingrese fecha de alquiler">
+                        <label for="">NOMBRE DEL CLIENTE</label>
+                        <input type="text" id="NOMBRE_DEL_CLIENTE" class="form-control" placeholder="Ingrese nombre del cliente">
+                        <label for="">DIRECCIÓN</label>
+                        <input type="text" id="DIRECCION" class="form-control" placeholder="Ingrese dirección">
+                        <label for="">DÍAS A ALQUILER</label>
+                        <input type="text" id="DIAS_A_ALQUILAR" class="form-control" placeholder="Ingrese días a alquilar">
+                        <label for="">PRECIO POR ALQUILER</label>
+                        <input type="text" id="PRECIO_POR_ALQUILER" class="form-control" placeholder="Ingrese precio por alquiler">
+                        <hr>
+                        <div id="btnagregarAlquiler">
+                            <input type="submit" id="btnagregar" onclick="AgregarAlquiler()" value="Agregar Alquiler" class="btn btn-success">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
